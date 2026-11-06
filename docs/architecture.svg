@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-label="Agile AI Squad architecture">
+  <defs>
+    <marker id="aGrey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#9fb0e8"/>
+    </marker>
+    <marker id="aGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#35d49a"/>
+    </marker>
+    <marker id="aAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#ffb944"/>
+    </marker>
+    <marker id="aViolet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b95ff"/>
+    </marker>
+    <marker id="aCyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#37d5d3"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="560" fill="#0e1730"/>
+  <text x="40" y="40" font-family='"Segoe UI", Arial, sans-serif' font-size="24" font-weight="700" fill="#e8ecff">How Agile AI Squad works</text>
+  <text x="40" y="62" font-family='"Segoe UI", Arial, sans-serif' font-size="13" fill="#9fb0e8">The hub runs the pipeline inside your coding tool; named agents join the right stage</text>
+
+  <!-- AI coding tool container with bmad hub -->
+  <rect x="40" y="80" width="880" height="96" rx="14" fill="#131f42" stroke="#6d7bff" stroke-width="2"/>
+  <text x="62" y="106" font-family='"Segoe UI", Arial, sans-serif' font-size="13" fill="#9fb0e8">AI Coding Tool — Claude Code · Codex</text>
+  <g font-family='"Segoe UI", Arial, sans-serif' font-size="13" text-anchor="middle">
+    <rect x="70" y="120" width="260" height="36" rx="18" fill="none" stroke="#ffb944" stroke-width="2"/>
+    <text x="200" y="143" fill="#ffd27a">bmad-build — run your change</text>
+    <rect x="350" y="120" width="260" height="36" rx="18" fill="none" stroke="#35d49a" stroke-width="2"/>
+    <text x="480" y="143" fill="#7ee6c2">bmad-help — what comes next</text>
+    <rect x="630" y="120" width="260" height="36" rx="18" fill="none" stroke="#37d5d3" stroke-width="2"/>
+    <text x="760" y="143" fill="#8fe6e5">bmad status — versions</text>
+  </g>
+
+  <!-- container to pipeline arrow -->
+  <line x1="130" y1="178" x2="130" y2="208" stroke="#9fb0e8" stroke-width="2" marker-end="url(#aGrey)"/>
+  <text x="146" y="200" font-family='"Segoe UI", Arial, sans-serif' font-size="11" fill="#9fb0e8">invoke bmad-build</text>
+
+  <!-- learn & adjust loop over the pipeline -->
+  <path d="M655 208 Q 480 158 305 208" stroke="#35d49a" stroke-width="2" stroke-dasharray="7 5" fill="none" marker-end="url(#aGreen)"/>
+  <text x="480" y="205" font-family='"Segoe UI", Arial, sans-serif' font-size="11" fill="#35d49a" text-anchor="middle">Learn &amp; adjust</text>
+
+  <!-- pipeline stages -->
+  <g font-family='"Segoe UI", Arial, sans-serif' font-size="16" font-weight="600" text-anchor="middle">
+    <rect x="55"  y="212" width="150" height="72" rx="12" fill="#16224a" stroke="#37d5d3" stroke-width="2"/>
+    <text x="130" y="253" fill="#e8ecff">Clarify</text>
+    <rect x="230" y="212" width="150" height="72" rx="12" fill="#16224a" stroke="#6d7bff" stroke-width="2"/>
+    <text x="305" y="253" fill="#e8ecff">Plan</text>
+    <rect x="405" y="212" width="150" height="72" rx="12" fill="#16224a" stroke="#ffb944" stroke-width="2"/>
+    <text x="480" y="253" fill="#e8ecff">Build</text>
+    <rect x="580" y="212" width="150" height="72" rx="12" fill="#16224a" stroke="#35d49a" stroke-width="2"/>
+    <text x="655" y="253" fill="#e8ecff">Verify</text>
+    <rect x="755" y="212" width="150" height="72" rx="12" fill="#16224a" stroke="#8b95ff" stroke-width="2"/>
+    <text x="830" y="253" fill="#e8ecff">Deliver</text>
+  </g>
+  <g stroke="#9fb0e8" stroke-width="2" fill="none">
+    <line x1="208" y1="248" x2="226" y2="248" marker-end="url(#aGrey)"/>
+    <line x1="383" y1="248" x2="401" y2="248" marker-end="url(#aGrey)"/>
+    <line x1="558" y1="248" x2="576" y2="248" marker-end="url(#aGrey)"/>
+    <line x1="733" y1="248" x2="751" y2="248" marker-end="url(#aGrey)"/>
+  </g>
+
+  <!-- decision context store -->
+  <rect x="55" y="396" width="480" height="68" rx="12" fill="#1b2b63" stroke="#8b95ff" stroke-width="2"/>
+  <text x="295" y="424" font-family='"Segoe UI", Arial, sans-serif' font-size="16" font-weight="600" fill="#e8ecff" text-anchor="middle">Decision Context Store</text>
+  <text x="295" y="447" font-family='"Segoe UI", Arial, sans-serif' font-size="12" fill="#9fb0e8" text-anchor="middle">broad decisions, specs, briefs — durable across sessions</text>
+
+  <!-- pipeline to store connector -->
+  <line x1="295" y1="288" x2="295" y2="392" stroke="#8b95ff" stroke-width="2" stroke-dasharray="4 5" marker-end="url(#aViolet)"/>
+  <text x="305" y="360" font-family='"Segoe UI", Arial, sans-serif' font-size="11" fill="#8b95ff">decisions &amp; specs flow down</text>
+
+  <!-- review gate -->
+  <rect x="590" y="396" width="150" height="68" rx="12" fill="#16224a" stroke="#ffb944" stroke-width="2"/>
+  <text x="665" y="434" font-family='"Segoe UI", Arial, sans-serif' font-size="15" font-weight="600" fill="#e8ecff" text-anchor="middle">Review Gate</text>
+
+  <!-- build to review gate -->
+  <line x1="540" y1="288" x2="630" y2="392" stroke="#ffb944" stroke-width="2" marker-end="url(#aAmber)"/>
+
+  <!-- project repo -->
+  <rect x="780" y="396" width="125" height="68" rx="12" fill="#16224a" stroke="#37d5d3" stroke-width="2"/>
+  <text x="842" y="434" font-family='"Segoe UI", Arial, sans-serif' font-size="15" font-weight="600" fill="#e8ecff" text-anchor="middle">Project Repo</text>
+
+  <!-- review gate to repo -->
+  <line x1="742" y1="430" x2="776" y2="430" stroke="#37d5d3" stroke-width="2" marker-end="url(#aCyan)"/>
+
+  <!-- agents band -->
+  <text x="480" y="488" font-family='"Segoe UI", Arial, sans-serif' font-size="11" fill="#5a6aa6" text-anchor="middle">Named agents join the right stage</text>
+  <g font-family='"Segoe UI", Arial, sans-serif' font-size="14" text-anchor="middle">
+    <rect x="55" y="498" width="150" height="44" rx="22" fill="none" stroke="#6d7bff" stroke-width="2"/>
+    <text x="130" y="525" fill="#aeb9ff">Product agent</text>
+    <rect x="230" y="498" width="150" height="44" rx="22" fill="none" stroke="#6d7bff" stroke-width="2"/>
+    <text x="305" y="525" fill="#aeb9ff">Architect agent</text>
+    <rect x="405" y="498" width="150" height="44" rx="22" fill="none" stroke="#6d7bff" stroke-width="2"/>
+    <text x="480" y="525" fill="#aeb9ff">UX agent</text>
+    <rect x="580" y="498" width="150" height="44" rx="22" fill="none" stroke="#6d7bff" stroke-width="2"/>
+    <text x="655" y="525" fill="#aeb9ff">Dev agent</text>
+    <rect x="755" y="498" width="150" height="44" rx="22" fill="none" stroke="#6d7bff" stroke-width="2"/>
+    <text x="830" y="525" fill="#aeb9ff">Test agent</text>
+  </g>
+</svg>
